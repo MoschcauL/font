@@ -20,6 +20,14 @@ var (
 	TagOS2 = MustNamedTag("OS/2")
 	// TagName represents the 'name' table, which contains font name information
 	TagName = MustNamedTag("name")
+	// TagCmap represents the 'cmap' table, which maps characters to glyphs
+	TagCmap = MustNamedTag("cmap")
+	// TagGlyf represents the 'glyf' table, which contains glyph data
+	TagGlyf = MustNamedTag("glyf")
+	// TagLoca represents the 'loca' table, which contains the byte offset of each glyph in the 'glyf' table
+	TagLoca = MustNamedTag("loca")
+	// TagPost represents the 'post' table, which contains information about the font used for PostScript
+	TagPost = MustNamedTag("post")
 	// TagGpos represents the 'GPOS' table, which contains Glyph Positioning features
 	TagGpos = MustNamedTag("GPOS")
 	// TagGsub represents the 'GSUB' table, which contains Glyph Substitution features
